@@ -9,6 +9,7 @@ const App = () => {
   const [posts, setPosts] = useState([]);
   const [searchText, setSearchText] = useState('');
   const [selectedPost, setSelectedPost] = useState(null);
+  const [isNavbarVisible, setIsNavbarVisible] = useState(window.innerWidth >= 768); // Используем ширину экрана для определения состояния
 
   useEffect(() => {
     fetch('https://cloud.codesupply.co/endpoint/react/data.json')
@@ -28,6 +29,21 @@ const App = () => {
     setSelectedPost(null);
   };
 
+  const toggleNavbar = () => {
+    setIsNavbarVisible((prevState) => !prevState);
+  };
+
+  const handleResize = () => {
+    setIsNavbarVisible(window.innerWidth >= 768); // Проверяем ширину экрана и обновляем состояние
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const filteredPosts = posts.filter(
     (post) =>
       post.title.toLowerCase().includes(searchText.toLowerCase()) ||
@@ -36,8 +52,8 @@ const App = () => {
 
   return (
     <div className="app">
-      <Header onSearch={handleSearch} /> {/* Передаем колбэк handleSearch в компонент Header */}
-      <Navbar />
+      <Header onSearch={handleSearch} toggleNavbar={toggleNavbar} />
+      {isNavbarVisible && <Navbar />}
       <div className='post-list-container'>
         {filteredPosts.map((post) => (
           <PostCard key={post.title} post={post} onClick={() => openPopup(post)} />

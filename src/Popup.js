@@ -9,11 +9,11 @@ const Popup = ({ post, onClose }) => {
 	return (
 		<div className="popup" onClick={onClose}>
 			<div className="popup-content" onClick={onNotClose}>
-        {/* <img className='popup-image' src={post.img_2x} alt={post.title} /> */}
+        <img className='popup-image' src={post.img_2x} alt={post.title} />
 				<h2 className='popup-title'>{post.title}</h2>
 				<p className='popup-text'>{post.text}</p>
+        <button className='popup-close-button' onClick={onClose}/>
 			</div>
-      <button className='popup-close-button' onClick={onClose}>X</button>
 		</div>
 	);
 };

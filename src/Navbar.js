@@ -24,11 +24,11 @@ const Navbar = () => {
         <li className='navbar-element'>Demos<span className='navbar-chevron-down'></span></li>
         <li className='navbar-element'>Post<span className='navbar-chevron-down'></span>
           <ul className='menu-container'>
-            <li className='menu-element'>Post Header<span className='menu-chevron-right'></span></li>
-            <li className='menu-element'>Post Layout<span className='menu-chevron-right'></span></li>
-            <li className='menu-element'>Share Buttons<span className='menu-chevron-right'></span></li>
-            <li className='menu-element'>Gallery Post<span className='menu-chevron-right'></span></li>
-            <li className='menu-element'>Video Post<span className='menu-chevron-right'></span></li>
+            <li className='menu-element'>Post Header<span className='menu-chevron-right' /></li>
+            <li className='menu-element'>Post Layout<span className='menu-chevron-right' /></li>
+            <li className='menu-element'>Share Buttons<span className='menu-chevron-right' /></li>
+            <li className='menu-element'>Gallery Post<span className='menu-chevron-right' /></li>
+            <li className='menu-element'>Video Post<span className='menu-chevron-right' /></li>
           </ul>
         </li>
         <li className='navbar-element'>Features<span className='navbar-chevron-down'></span></li>
