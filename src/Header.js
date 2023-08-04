@@ -1,12 +1,13 @@
 import './Header.css';
 import logo from './images/Logo.svg';
+import Search from './Search'
 
-const Header = () => {
+const Header = ({ onSearch }) => {
   return (
     <header className='header'>
       <div className='header-container'>
         <img className='header-logo' src={logo} alt='Logo' />
-        <div className='search-button' />
+        <Search onSearch={onSearch} />
       </div>
     </header>
   );
