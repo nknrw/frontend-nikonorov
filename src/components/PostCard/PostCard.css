@@ -4,8 +4,7 @@
   text-align: left;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  /* margin: auto; */
+  gap: 1rem;
 }
 
 .post-card-image {
@@ -14,14 +13,16 @@ margin: 0;
 
 .post-card-tags {
   margin: 0;
-  font-size: 13px;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
   font-weight: 700;
   color: #EB0028;
 }
 
 .post-card-title {
   margin: 0;
-  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   font-weight: 700;
 }
 
@@ -30,7 +31,8 @@ margin: 0;
   margin: 0;
   font-weight: 400;
   color: #9B9B9B;
-  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
 }
 
 .post-card-info-author {
@@ -41,5 +43,6 @@ margin: 0;
 .post-card-text {
   margin: 0;
   color: #9B9B9B;
-  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
 }

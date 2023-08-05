@@ -1,8 +1,7 @@
 .popup {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 1;
-  /* max-width: 500px; */
-  font-size: 32px;
+  font-size: 2rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -11,19 +10,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: visible;
 }
 
 .popup-content {
   width: 80%;
   max-width: 900px;
   background-color: #fff;
-  padding: 20px;
+  padding: 1.5rem;
   position: relative;
   text-align: left;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .popup-close-button {
@@ -43,18 +41,16 @@
   background-repeat: no-repeat;
 }
 
-.popup-image {
-  /* max-width: 580px; */
-}
-
 .popup-title {
   margin: 0;
-  font-size: 32px;
+  font-size: 2rem;
+  line-height: 2rem;
   font-weight: 700;
 }
 
 .popup-text {
   margin: 0;
   color: #9B9B9B;
-  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
 }

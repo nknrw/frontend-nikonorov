@@ -1,6 +1,6 @@
 .search-container {
   position: absolute;
-  right: 20px;
+  right: 1.25rem;
   width: fit-content;
 }
 
@@ -14,10 +14,9 @@
 	cursor: pointer;
 	height: 20px;
 	margin: 0;
-	padding: 0 0 0 20px;
+	padding: 0 0 0 1.25rem;
 	position: relative;
-	-webkit-transition: width 400ms ease, background 400ms ease;
-	transition:         width 400ms ease, background 400ms ease;
+	transition: height 0.2s ease-in-out, width 0.2s ease-in-out, background 0.4s ease-in-out;
 	width: 0;
 }
 
@@ -28,15 +27,15 @@
 	outline: 0;
 	width: 200px;
   height: 40px;
-  padding-left: 30px;
+  padding-left: 2rem;
   background-position: 5px center;
-  /* margin: 5px; */
-  /* height: 40px; */
+  transition: height 0.2s ease-in-out, width 0.4s ease-in-out, background 0.2s ease-in-out;
+
 }
 
 @media screen and (max-width: 768px) {
   .search-input:focus {
-    width: calc(100vw - 70px);
+    width: calc(100vw - 4.50rem);
     height: 40px;
   }
 }

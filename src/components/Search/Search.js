@@ -1,20 +1,18 @@
 import React from 'react';
 import './Search.css';
 
-const Search = ({ onSearch }) => { // Принимаем колбэк onSearch из пропсов
+const Search = ({ onSearch }) => {
   const handleInputChange = (e) => {
-    onSearch(e.target.value); // Вызываем колбэк onSearch с текущим значением инпута
+    onSearch(e.target.value);
   };
 
   return (
     <div className="search-container">
-      {/* <form noValidate=""> */}
         <input
           placeholder="Search"
           className="search-input"
-          onChange={handleInputChange} // Добавляем обработчик события onChange
+          onChange={handleInputChange}
         />
-      {/* </form> */}
     </div>
   );
 };
