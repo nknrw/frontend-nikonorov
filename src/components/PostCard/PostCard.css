@@ -9,8 +9,7 @@
 
 @media screen and (max-width: 768px) {
   .post-card {
-    max-width: 335px;
-    width: calc(100vw - 1.25rem);
+    max-width: calc(100vw - 2.50rem);
     }
 }
 
