@@ -7,12 +7,18 @@
   margin: 48px auto 165px auto;
 }
 
+@media screen and (max-width: 768px) {
+  .post-list-container {
+    /* margin: 48px 20px 165px 20px; */
+  }
+}
+
 .header {
   height: 80px;
 }
 
-.nav-menu {
+/* .nav-menu {
   position: sticky;
   top: 80px;
   background-color: #fff;
-}
+} */

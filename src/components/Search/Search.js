@@ -8,13 +8,13 @@ const Search = ({ onSearch }) => { // Принимаем колбэк onSearch �
 
   return (
     <div className="search-container">
-      <form noValidate="">
+      {/* <form noValidate=""> */}
         <input
           placeholder="Search"
           className="search-input"
           onChange={handleInputChange} // Добавляем обработчик события onChange
         />
-      </form>
+      {/* </form> */}
     </div>
   );
 };

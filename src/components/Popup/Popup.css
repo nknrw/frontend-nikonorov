@@ -12,12 +12,11 @@
   align-items: center;
   justify-content: center;
   overflow: visible;
-  height: 100%;
 }
 
 .popup-content {
-  max-width: 1160px;
-  max-width: 870px;
+  width: 80%;
+  max-width: 900px;
   background-color: #fff;
   padding: 20px;
   position: relative;
@@ -38,7 +37,7 @@
   top: -60px;
   right: 0;
   background-color: #ffffff;
-  background-image: url('./images/close.svg');
+  background-image: url('../../images/close.svg');
   background-size: 25px 25px;
   background-position: center;
   background-repeat: no-repeat;
