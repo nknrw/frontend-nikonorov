@@ -13,12 +13,14 @@
   max-width: 1160px;
   position: relative;
   height: 82px;
+  justify-content: center;
 }
 
 .header-logo {
-  width: 181px;
-  height: 27px;
-  margin: 29px auto 25px;
+  width: 100%;
+  height: 100%;
+  max-width: 181px;
+  max-height: 27px;
 }
 
 .header-menu-button {

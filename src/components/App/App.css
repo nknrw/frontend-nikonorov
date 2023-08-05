@@ -6,3 +6,9 @@
   justify-content: center;
   margin: 3rem auto 10rem auto;
 }
+
+/* @media screen and (max-width: 768px) {
+  .post-list-container {
+    width: calc(100vw - 1.25rem);
+    }
+} */

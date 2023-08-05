@@ -46,3 +46,10 @@
   align-items: center;
   border-bottom: #e9e9e9 1px solid;
 }
+
+.mobile-menu-logo {
+  width: 100%;
+  height: 100%;
+  max-width: 181px;
+  max-height: 27px;
+}

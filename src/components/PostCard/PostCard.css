@@ -7,6 +7,13 @@
   gap: 1rem;
 }
 
+@media screen and (max-width: 768px) {
+  .post-card {
+    max-width: 335px;
+    width: calc(100vw - 1.25rem);
+    }
+}
+
 .post-card-image {
 margin: 0;
 }
